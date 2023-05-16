@@ -28,7 +28,10 @@ public class Region extends JFrame {
         this.solved = solved;
     }
 
-    public void drawRectangle(){}
-
     public Rectangle getRectangle(){ return new Rectangle(x, y, w, h); }
+
+    public int getX(){ return x; }
+    public int getY(){ return y; }
+    public int getW(){ return w; }
+    public int getH(){ return h; }
 }

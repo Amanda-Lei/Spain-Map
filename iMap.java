@@ -5,7 +5,7 @@ import javax.swing.*;
 //where mouse interactions trigger other classes
 public class iMap extends Canvas implements MouseListener {
     RegionController model = new RegionController("MyMapInfo.txt");
-    String imageFile = "SpainMap.png";
+    String imageFile = "SpainMap.jpeg";
 
     public iMap(){
         //image = ImageIO.read(newFile("SpainMap.png"));
@@ -27,16 +27,19 @@ public class iMap extends Canvas implements MouseListener {
 
     public void paint(Graphics g) {  
   
-        Toolkit t=Toolkit.getDefaultToolkit();  
-        Image i=t.getImage(imageFile);  
-        g.drawImage(i, 120,100,this);  
+        Toolkit t = Toolkit.getDefaultToolkit();  
+        Image i = t.getImage(imageFile);
+        g.drawImage(i, 0, 0, 980, 700, this);
+        for (Region r : model.getRegions()){
+            g.drawRect(r.getX(), r.getY(), r.getW(), r.getH());
+        }
           
     }  
     public static void main(String[] args) {  
         iMap m = new iMap();  
-        JFrame f=new JFrame();  
+        JFrame f = new JFrame();  
         f.add(m);  
-        f.setSize(400,400);  
+        f.setSize(980,700);
         f.setVisible(true);  
     }  
 

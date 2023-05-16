@@ -21,6 +21,8 @@ public class RegionController {
         }
     }
 
+    public Region[] getRegions() { return regions; }
+
     public Region find(Point p){ //find the region that contains point
         for ( Region next : regions ){
             Rectangle r = next.getRectangle();
