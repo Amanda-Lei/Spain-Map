@@ -1,6 +1,7 @@
 import java.awt.*;
+import javax.swing.*;
 
-public class Region {
+public class Region extends JFrame {
     boolean locked;
     int x;
     int y;
@@ -26,4 +27,8 @@ public class Region {
         this.description = description;
         this.solved = solved;
     }
+
+    public void drawRectangle(){}
+
+    public Rectangle getRectangle(){ return new Rectangle(x, y, w, h); }
 }

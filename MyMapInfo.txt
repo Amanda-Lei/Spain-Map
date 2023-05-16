@@ -1,16 +1,16 @@
 15
 110 5 107 140 Gallicia
-230 130 180 110 Castile and Leon
+230 130 180 110 CastileandLeon
 150 270 110 106 Exremadura
 230 20 107 56 Asturias
 340 65 70 55 Cantabria
 478 125 50 50 Navarra
-420 135 50 50
-336 245 56 60
-420 87 60 40 Pais Vasco
+420 135 50 50 LaRioja
+336 245 56 60 Madrid
+420 87 60 40 PaisVasco
 478 180 100 130 Aragon
 600 175 160 100 Cataluna
-280 310 180 110 Castille La Mancha
+280 310 180 110 CastilleLaMancha
 478 320 75 140 Valenciana
 420 450 60 50 Murcia
 150 425 265 100 Andalucia

@@ -3,12 +3,12 @@ import java.awt.event.*;
 import javax.swing.*;
 
 //where mouse interactions trigger other classes
-public class iMap extends JPanel implements MouseListener {
+public class iMap extends Canvas implements MouseListener {
     RegionController model = new RegionController("MyMapInfo.txt");
-    //BufferedImage image;
+    String imageFile = "SpainMap.png";
 
     public iMap(){
-        //image = Util.readImage("SpainMap.png");
+        //image = ImageIO.read(newFile("SpainMap.png"));
         addMouseListener( this );
     }
 
@@ -24,5 +24,20 @@ public class iMap extends JPanel implements MouseListener {
     public void mouseMoved( MouseEvent e ) {}
     public void mousePressed( MouseEvent e ) {}
     public void mouseReleased( MouseEvent e ) {}
+
+    public void paint(Graphics g) {  
+  
+        Toolkit t=Toolkit.getDefaultToolkit();  
+        Image i=t.getImage(imageFile);  
+        g.drawImage(i, 120,100,this);  
+          
+    }  
+    public static void main(String[] args) {  
+        iMap m = new iMap();  
+        JFrame f=new JFrame();  
+        f.add(m);  
+        f.setSize(400,400);  
+        f.setVisible(true);  
+    }  
 
 }
