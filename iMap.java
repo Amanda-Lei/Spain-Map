@@ -40,7 +40,7 @@ public class iMap extends Canvas implements MouseListener {
     public static void main(String[] args) {  
         iMap m = new iMap();  
         JFrame f = new JFrame();  
-        f.add(m);  
+        f.add(m);
         f.setSize(980,700);
         f.setVisible(true); 
 

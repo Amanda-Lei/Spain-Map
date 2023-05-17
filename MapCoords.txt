@@ -11,7 +11,7 @@
 580 180 100 130 Aragon
 700 160 160 100 Catalonia
 395 330 180 110 CastilleLaMancha
-625 320 60 140 Valencia
+600 320 60 120 Valencia
 545 450 70 60 Murcia
 260 480 270 130 Andalucia
 605 540 350 140 CanaryIslands
