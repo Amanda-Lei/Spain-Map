@@ -39,4 +39,6 @@ public class Region extends JFrame {
     public String getDesc(){ return description; }
     public boolean isSolved(){ return solved; }
 
+    public void setSolved(boolean s) { solved = s; }
+
 }

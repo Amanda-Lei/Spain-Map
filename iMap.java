@@ -6,7 +6,7 @@ import javax.swing.*;
 public class iMap extends Canvas implements MouseListener {
     RegionController model = new RegionController("MapCoords.txt");
     String imageFile = "SpainMap.jpeg";
-    String infoFile = "RegionInfo";
+    String infoFile = "RegionInfo.txt";
 
     public iMap(){
         //image = ImageIO.read(newFile("SpainMap.png"));
