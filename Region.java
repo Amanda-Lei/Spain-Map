@@ -30,8 +30,13 @@ public class Region extends JFrame {
 
     public Rectangle getRectangle(){ return new Rectangle(x, y, w, h); }
 
+    public boolean equals(Region other){ return other!=null; }
     public int getX(){ return x; }
     public int getY(){ return y; }
     public int getW(){ return w; }
     public int getH(){ return h; }
+    public String getName(){ return name; }
+    public String getDesc(){ return description; }
+    public boolean isSolved(){ return solved; }
+
 }

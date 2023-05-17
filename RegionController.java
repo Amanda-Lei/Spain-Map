@@ -23,6 +23,14 @@ public class RegionController {
 
     public Region[] getRegions() { return regions; }
 
+    public int countSolvedRooms(){
+        int count = 0;
+        for ( Region next : regions ){
+            if (next.isSolved()) { count++; }
+        }
+        return count;
+    }
+
     public Region find(Point p){ //find the region that contains point
         for ( Region next : regions ){
             Rectangle r = next.getRectangle();
